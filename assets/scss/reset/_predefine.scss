@@ -15,6 +15,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    background-color: #eee;
+}
+
 h1,
 h2,
 h3,
@@ -91,16 +95,6 @@ button:focus {
     box-shadow: none;
 }
 
-.section{
-	padding: 12rem 0
-}
-.section-top{
-	padding: 12rem 0 0
-}
-.section-bottom{
-	padding: 0 0 12rem 0
-}
-
 .btn.focus, .btn:focus{
 	border: 1px solid transparent;
 }
@@ -154,5 +148,89 @@ ul{
     background: $primary-color;
     text-shadow: none;
     color: #ffffff;
+}
+
+.btn {
+    border-radius: 0;
+    height: 45px;
+    line-height: 45px;
+    background-color: $primary-color;
+    padding: 0 25px;
+
+    &:focus,
+    &:active {
+        box-shadow: none;
+        outline: 0;
+        border: 0;
+    }
+
+    &.btn-sm {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+}
+
+.center {
+    max-width: 600px;
+    margin: 90px auto;
+    padding: 60px 30px;
+    text-align: center;
+    background-color: $white;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.btn {
+    border: 0;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: rgba($color: $primary-color, $alpha: 0.8);
+    }
+
+    &:focus {
+        background-color: $primary-color;
+        color: $white;
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+        background-color: rgba($color: $secondary-color, $alpha: 0.8);
+    }
+
+    &:focus {
+        background-color: $secondary-color;
+        color: $white;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 

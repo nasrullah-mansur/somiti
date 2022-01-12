@@ -1,0 +1,10 @@
+.table.custom-width {
+    td,
+    th {
+        text-align: left;
+
+        &:first-child {
+            width: 140px;
+        }
+    }
+}

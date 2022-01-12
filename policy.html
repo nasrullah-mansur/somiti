@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    
+    <link rel="stylesheet" href="assets/css/select-2.css">
     <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
 
     <!-- Main CSS -->
@@ -20,6 +20,7 @@
     <!-- Header start -->
     <header class="header">
         <div class="container">
+            
             <div class="content">
                 <div class="title">
                     <p>প্রগতি ক্ষুদ্র ব্যবসায়ী সমবায় সমিতি লিঃ</p>
@@ -45,38 +46,32 @@
     </header>
     <!-- Header end -->
 
-    <!-- Categories start -->
-    <section class="categories">
+    <!-- Policy start -->
+    
+    <section class="center">
         <div class="container">
-            <div class="items">
-                <a href="#">
-                    <div class="item">
-                        <img src="assets/images/icon-1.png" alt="img">
-                        <h4>কালেকশন</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="assets/images/icon-2.png" alt="img">
-                        <h4>হিসাব অনুসন্ধান</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="assets/images/icon-3.png" alt="img">
-                        <h4>নগদ প্রদান</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="assets/images/icon-4.png" alt="img">
-                        <h4>সদস্যগণ</h4>
-                    </div>
-                </a>
+            <div class="today py-2 px-5 mb-3 border d-inline-block">
+                <h2>আজকের তারিখ</h2>
+                <p class="bn-text m-0">12-12-2020</p>
             </div>
+
+            <h4 class="text-start">পলিসি নং</h4>
+            <form >
+                <div class="input-area">
+                    <select id="day" class="custom-select">
+                        <option value="">A-1</option>
+                        <option value="">A-2</option>
+                        <option value="">A-3</option>
+                    </select>
+                </div>
+
+                <div class="btn-area">
+                    <button class="btn-primary btn" type="submit">এগিয়ে যান</button>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- Categories end -->
+    <!-- Policy end -->
 
     <!-- Footer start -->
     <footer class="footer">
@@ -87,9 +82,12 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.2.2.4.min.js"></script>
-    
+    <script src="assets/js/select-2.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    
+    <script>
+        $(document).ready(function() {
+            $('.custom-select').select2();
+        });
+    </script>
 </body>
 </html>

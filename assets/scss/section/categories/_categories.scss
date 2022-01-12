@@ -1,0 +1,40 @@
+.categories {
+    padding: 120px 0;
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            display: inline-block;
+            margin: 0 15px 30px;
+        }
+
+        .item {
+            background-color: $white;
+            padding: 30px;
+            text-align: center;
+            width: 250px;
+
+            img {
+                width: 100px;
+            }
+
+            h4 {
+                color: $bColor;
+                text-align: center;
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px solid #ddd;
+                transition: $transition;
+
+            }
+
+            &:hover {
+                h4 {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
