@@ -1,13 +1,26 @@
 .categories {
     padding: 120px 0;
 
+    @media (max-width: 575px) {
+        padding: 40px 0;
+    }
+
     .items {
         display: flex;
         flex-wrap: wrap;
 
+        @media (max-width: 575px) {
+            justify-content: space-between;
+        }
+
         a {
             display: inline-block;
             margin: 0 15px 30px;
+
+            @media (max-width: 575px) {
+                margin: 0 0 15px;
+                width: calc(50% - 7.5px);
+            }
         }
 
         .item {
@@ -15,6 +28,10 @@
             padding: 30px;
             text-align: center;
             width: 250px;
+
+            @media (max-width: 575px) {
+                width: 100%;
+            }
 
             img {
                 width: 100px;
@@ -28,6 +45,18 @@
                 border-top: 1px solid #ddd;
                 transition: $transition;
 
+            }
+
+            @media (max-width: 575px) {
+                padding: 15px;
+
+                img {
+                    width: 60px;
+                }
+
+                h4 {
+                    font-size: 14px;
+                }
             }
 
             &:hover {

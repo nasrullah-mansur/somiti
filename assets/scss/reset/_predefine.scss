@@ -29,6 +29,27 @@ h6{
 	font-weight: 700;
 }
 
+@media (max-width: 575px) {
+    h1 {
+        font-size: 26px;
+        span {
+            display: block;
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
+
 iframe {
 	border: none;
 }
@@ -156,6 +177,12 @@ ul{
     line-height: 45px;
     background-color: $primary-color;
     padding: 0 25px;
+    display: inline-flex;
+    align-items: center;
+
+    i {
+        padding-right: 8px;
+    }
 
     &:focus,
     &:active {
@@ -173,7 +200,7 @@ ul{
 }
 
 .center {
-    max-width: 600px;
+    max-width: 575px;
     margin: 90px auto;
     padding: 60px 30px;
     text-align: center;
@@ -181,6 +208,12 @@ ul{
 
     h1 {
         margin-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        max-width: calc(100% - 30px);
+        padding: 30px 15px;
+        margin: 40px auto;
     }
 }
 
